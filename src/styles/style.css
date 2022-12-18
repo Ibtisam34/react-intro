@@ -4,54 +4,83 @@
 }
 
 body {
-  background: gold;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  background-color: #282D35;
 }
 
-img {
-  margin-left: 5%;
-}
-
-.nav-items {
-  list-style: none;
+nav {
   display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 50px;
+  padding: 20px 20px;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  background: grey;
+
+.nav--logo_text, .nav--title {
+  margin: 0;
 }
 
-.item {
-  padding-top: 2%;
-  font-size: 30px;
-  padding-bottom: 2%;
-  padding-left: 320px;
+.nav--logo_text {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.2535px;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  }
+
+.nav--title {
+    color: #DEEBF8;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+
+}
+
+.logo {
+    height: 30px;
+    margin-right: 7px;
+}
+
+main {
+  opacity: 0.7;
   color: white;
-}
-
-footer {
-  padding: 7px;
-  margin-top: 20%;
-  margin-left:5%;
-  margin-right:4%;
-  background: grey;
-  text-align: center;
+  padding: 57px 27px;
   color: white;
-  border: solid;
-  border-width: 2px;
+  background-image: url(../components/img/react2.png);
+  background-repeat: no-repeat;
+  background-position: right 40%;
+  
 }
 
-h1 {
-  margin-top: 5%;
-  text-align: center;
-  font-size: 50px;
-  color: blueviolet;
+.main--title {
+  margin-left: 4%;
+  font-size: 40px;
+  letter-spacing: -0.05em;
 }
 
-ol {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 1%;
-  color: blue;
+main ,.main--facts  {
+ margin-top: 34px;
+ max-width: 400px;
 }
+
+.main--facts > li {
+  margin-left: 7%;
+  letter-spacing: -0.05em;
+  font-size : 25px;
+}
+
+.main--facts > li::marker  {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
+
+
+
+
